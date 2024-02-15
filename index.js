@@ -58,6 +58,7 @@ app.post('/books/:book_id', async (req, res, next) => {
     }
 });
 
+// Authentication
 app.post('/login', (req, res) => {
     const { username, password } = req.body;
     
@@ -71,6 +72,8 @@ app.post('/login', (req, res) => {
     }
   });
 
+
+// Create User
 app.post('/register', async (req, res, next) => {
     try {
         const { firstName, lastName, email, dob, password } = req.body;

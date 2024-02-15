@@ -7,10 +7,8 @@
       "pageCount": 388,
       "coverImage": "/book-cover.jpg",
       "slug": "tess-of-the-durbervilles",
-      "currentPage": 100,
-      "reviews": [
-        "Nice book"
-      ]
+      "currentPage": 1,
+      "reviews": []
     },
     {
       "title": "Taras Bulba",
@@ -19,7 +17,7 @@
       "pageCount": 154,
       "coverImage": "/book-cover.jpg",
       "slug": "taras-bulba",
-      "currentPage": 120,
+      "currentPage": 50,
       "reviews": []
     },
     {
@@ -29,7 +27,7 @@
       "pageCount": 559,
       "coverImage": "/book-cover.jpg",
       "slug": "the-odyssey-of-homer",
-      "currentPage": 10,
+      "currentPage": 30,
       "reviews": []
     },
     {
@@ -59,10 +57,8 @@
       "pageCount": 249,
       "coverImage": "/book-cover.jpg",
       "slug": "there-there",
-      "currentPage": 100,
-      "reviews": [
-        "It is great so far!"
-      ]
+      "currentPage": 1,
+      "reviews": []
     },
     {
       "title": "Wuthering Heights",
