@@ -1,0 +1,28 @@
+{
+  "users": [
+    {
+      "id": 1707901932867,
+      "firstName": "Henrique",
+      "lastName": "Braga",
+      "email": "admin@admin.com",
+      "dob": "1993-01-12",
+      "password": "test123"
+    },
+    {
+      "id": 1707929824126,
+      "firstName": "karolina",
+      "lastName": "braga",
+      "email": "karolina@test.com",
+      "dob": "1999-01-12",
+      "password": "test123"
+    },
+    {
+      "id": 1707990310870,
+      "firstName": "chester",
+      "lastName": "braga",
+      "email": "chester@test.com",
+      "dob": "2000-12-12",
+      "password": "test123"
+    }
+  ]
+}
