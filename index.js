@@ -70,7 +70,43 @@ app.post('/login', (req, res) => {
     } else {
       res.status(401).json({ success: false, message: 'Invalid email or password' });
     }
-  });
+});
+
+app.get('/user/:user_id', async (req, res, next) => {
+    const { user_id } = req.params;
+    const userData = users?.users;
+    const user = userData?.find((user) => user.id == user_id);
+    if (user) {
+        res.json({ username: user.firstName, id: user.id, bookProgress: user.bookProgress})
+    } else {
+        res.status(401).json({ success: false, message: 'User not found'})
+    }
+})
+
+app.post('/user/:user_id', async (req, res, next) => {
+    try {
+        const { user_id } = req.params;
+
+        const userIndex = users.users.findIndex((user) => user.id == user_id);
+
+        if (userIndex !== -1) {
+            const updatedUser = req.body;
+            if (!users.users[userIndex].hasOwnProperty('bookProgress')) {
+                users.users[userIndex].bookProgress = [];
+            }
+
+            users.users[userIndex] = { ...users.users[userIndex], ...updatedUser };
+            await fs.writeFile('./users.json', JSON.stringify(users, null, 2));
+
+            res.json({ message: 'user updated successfully', updatedUser });
+        } else {
+            res.status(404).json({ error: 'user not found' });
+        }
+    } catch (error) {
+        console.error('Error updating user:', error);
+        res.status(500).json({ error: 'Internal server error' });
+    }
+});
 
 
 // Create User

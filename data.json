@@ -17,7 +17,7 @@
       "pageCount": 154,
       "coverImage": "/book-cover.jpg",
       "slug": "taras-bulba",
-      "currentPage": 50,
+      "currentPage": 1,
       "reviews": []
     },
     {
@@ -27,7 +27,7 @@
       "pageCount": 559,
       "coverImage": "/book-cover.jpg",
       "slug": "the-odyssey-of-homer",
-      "currentPage": 30,
+      "currentPage": 1,
       "reviews": []
     },
     {
@@ -67,7 +67,7 @@
       "pageCount": 452,
       "coverImage": "/book-cover.jpg",
       "slug": "wuthering-heights",
-      "currentPage": 100,
+      "currentPage": 1,
       "reviews": []
     },
     {
@@ -107,7 +107,7 @@
       "pageCount": 132,
       "coverImage": "/book-cover.jpg",
       "slug": "supernatural-horror-in-literature",
-      "currentPage": 20,
+      "currentPage": 1,
       "reviews": []
     }
   ]
